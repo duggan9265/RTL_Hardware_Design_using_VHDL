@@ -1,0 +1,42 @@
+\documentclass{article}
+
+\input{Preamble/preamble.tex} % Your preamble content
+\input{Glossary/Glossary.tex}
+
+
+
+\title{FPGA Based Feedforward System for Photonic Simulation and Quantum Computing Applications}
+\author{\uppercase{Daniel Duggan}}
+\date{\today}   % date
+
+\begin{document}
+
+\maketitle    % Print the title, author, and date
+
+
+
+
+This document has answers to some questions contained in chapter 3 of the book RTL Hardware Design Using VHDL 
+by Pong P. Chu. \cite{chu2006rtl}.  \\
+
+\textbf{A 3.1} \\
+
+\begin{lstlisting}[style=vhdlstyle]
+ library ieee;
+ use ieee.std_logic_1664.all;
+ use ieee.numeric_std.all; 
+
+entity mem_cir is 
+port (
+ addr : in std_logic_vector(11 downto 0); 
+ wr_n : in std_logic; 
+ oe_n : out std_logic; 
+ data : inout std_logic_vector(8 downto 0) 
+);
+\end{lstlisting}
+
+
+\bibliography{Bibliography/bib}
+\end{document}
+
+

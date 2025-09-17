@@ -1,0 +1,37 @@
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}  % Keep for better PDF output
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage[acronym]{glossaries}
+\usepackage{cite}
+\usepackage{braket}
+\bibliographystyle{IEEEtran}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\def\UrlBreaks{\do\/\do-\do_}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{vhdlstyle}{
+  language=VHDL,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{red},
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  frame=single,
+  tabsize=2,
+  showstringspaces=false,
+  breaklines=true,
+  breakatwhitespace=true,
+  morekeywords={downto,others} % you can add more VHDL keywords
+}
